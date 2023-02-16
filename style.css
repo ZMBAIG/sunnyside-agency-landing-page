@@ -21,7 +21,7 @@ header {
   padding: 25px;
 }
 header h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   word-spacing: 6px;
   margin-top: 12px;
@@ -125,6 +125,14 @@ ul {
 }
 
 /* =========================Start We are creative Section================================= */
+
+.transform,
+.stand-out,
+.graphic__design__photography {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .sub__transform,
 .sub__stand-out,
 .sub__graphic-design,
@@ -133,7 +141,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8rem;
+  padding: 2rem 4rem;
 }
 .transform-more:hover {
   border-bottom: 8px solid var(--yellow);
@@ -176,21 +184,13 @@ h4 {
 .image-transform,
 .image-stand-out {
   width: 100%;
-  height: 700px;
+  height: 650px;
 }
 .sub__transform p,
 .sub__stand-out p {
   color: var(--dark-grayish-blue);
   line-height: 1.5em;
   padding: 30px 0;
-}
-.creative-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  overflow: hidden;
 }
 .graphic-design,
 .phtography {
@@ -201,7 +201,7 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 700px;
+  height: 600px;
   width: 100%;
 }
 .graphic-design {
@@ -364,7 +364,6 @@ ol {
 
   a {
     margin: 4px 0;
-    /* background-color: rgb(180, 242, 242); */
     color: white;
   }
   .nav-menu.active {
@@ -378,6 +377,14 @@ ol {
   .creative-container {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .transform,
+  .stand-out,
+  .graphic__design__photography {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
   .sub-testimonials-container {
     flex-wrap: wrap;
